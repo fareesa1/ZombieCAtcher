@@ -3,12 +3,12 @@ var invGround;
 var playerClimb
 
 function preload() {
-    // playerWalk = loadAnimation("character_walk/1.png",
-    //     "character_walk/2.png",
-    //     "character_walk/3.png",
-    //     "character_walk/4.png", "character_walk/5.png", "character_walk/6.png")
+    playerWalk = loadAnimation("character_walk/1.png",
+        "character_walk/2.png",
+        "character_walk/3.png",
+        "character_walk/4.png", "character_walk/5.png", "character_walk/6.png")
 
-        playerWalk = loadAnimation("1.png","2.png","3.png")
+//         playerWalk = loadAnimation("1.png","2.png","3.png")
 
         zombieWalk = loadAnimation("walk/1.png",
         "walk/2.png","walk/3.png","walk/4.png")
