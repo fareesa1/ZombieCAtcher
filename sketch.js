@@ -8,7 +8,7 @@ function preload() {
         "character_walk/3.png",
         "character_walk/4.png", "character_walk/5.png", "character_walk/6.png")
 
-//         playerWalk = loadAnimation("1.png","2.png","3.png")
+        // playerWalk = loadAnimation("1.png","2.png","3.png")
 
         zombieWalk = loadAnimation("walk/1.png",
         "walk/2.png","walk/3.png","walk/4.png")
@@ -32,13 +32,13 @@ function setup() {
     helicopter.addAnimation("cage", hellicopterImage)
     helicopter.visible = false;
 
-    invGround = createSprite(400, 580, 800, 10)
+    invGround = createSprite(400, 455, 800, 10)
     invGround.visible = false
 
     player = createSprite(80, 400, 50, 50);
     player.addAnimation("walk", playerWalk)
     // player.addAnimation("climb", playerClimb)
-    player.scale = 2.9
+    player.scale = 0.3
     //player.debug = true
     player.setCollider("circle", -20, 20, 30)
     background1.velocityX = -2
@@ -74,6 +74,8 @@ if(zombieGroup[0]!== undefined){
         zombieGroup[0].lifetime = 50
      }
 }
+
+
 }
 
 function zombies(){
